@@ -1,0 +1,135 @@
+.display {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 2rem;
+    background-color: #270101;
+    color: white
+}
+
+.header-section1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    background-color: #d9ac2a;
+    color: black
+}
+
+.section1 p {
+    height: 1rem;
+}
+
+.section1 button {
+    display: flex;
+    width: 66%;
+    height: 1.5rem;
+    background-color: white;
+    border: solid 0.5px;
+    font-size: 12px;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.main {
+    display: grid;
+    grid-template-areas:
+        "item1"
+        "item2"
+        "foot-menu";
+    width: 100%;
+    height: auto;
+    justify-items: center;
+    align-content: center;
+    padding-top: 1rem;
+    background-color: #d8d583;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 80%;
+    height: 215px;
+    border: solid 0.5px;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+.grid button {
+    display: flex;
+    width: 66%;
+    height: 1.5rem;
+    color: white;
+    background-color: #270101;
+    border: solid 0.5px;
+    font-size: 12px;
+    justify-content: center;
+    align-items: start;
+}
+
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.foot-menu {
+    display: flex;
+    justify-content: center;
+    grid-area: foot-menu;
+    width: 66%;
+}
+
+.foot-menu button {
+    border: solid 0.5px;
+    height: 2rem;
+    margin-bottom: 1rem;
+
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #270101;
+    width: 100%;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 5px;
+}
+
+@media (min-width: 576px) {
+    .display{
+        display: none;
+    }
+    .header{
+        display: none;
+    }
+    .section1{
+        display: none;
+    }
+    .main{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+}
